@@ -11,3 +11,4 @@ E:\Documents\GitHub\FramesPlus\FramesPlus\FramesPlus\obj\Debug\FramesPlus.exe
 E:\Documents\GitHub\FramesPlus\FramesPlus\FramesPlus\obj\Debug\FramesPlus.xml
 E:\Documents\GitHub\FramesPlus\FramesPlus\FramesPlus\obj\Debug\FramesPlus.pdb
 E:\Documents\GitHub\FramesPlus\FramesPlus\FramesPlus\obj\Debug\FramesPlus.FramesPlusSplash.resources
+E:\Documents\GitHub\FramesPlus\FramesPlus\FramesPlus\obj\Debug\FramesPlus.About.resources
