@@ -1,0 +1,13 @@
+E:\Documents\GitHub\FramesPlus\FramesPlus\FramesPlus\bin\Debug\FramesPlus.exe.config
+E:\Documents\GitHub\FramesPlus\FramesPlus\FramesPlus\bin\Debug\FramesPlus.exe
+E:\Documents\GitHub\FramesPlus\FramesPlus\FramesPlus\bin\Debug\FramesPlus.pdb
+E:\Documents\GitHub\FramesPlus\FramesPlus\FramesPlus\bin\Debug\FramesPlus.xml
+E:\Documents\GitHub\FramesPlus\FramesPlus\FramesPlus\obj\Debug\FramesPlus.vbprojAssemblyReference.cache
+E:\Documents\GitHub\FramesPlus\FramesPlus\FramesPlus\obj\Debug\FramesPlus.FramesPlus.resources
+E:\Documents\GitHub\FramesPlus\FramesPlus\FramesPlus\obj\Debug\FramesPlus.Resources.resources
+E:\Documents\GitHub\FramesPlus\FramesPlus\FramesPlus\obj\Debug\FramesPlus.vbproj.GenerateResource.cache
+E:\Documents\GitHub\FramesPlus\FramesPlus\FramesPlus\obj\Debug\FramesPlus.vbproj.CoreCompileInputs.cache
+E:\Documents\GitHub\FramesPlus\FramesPlus\FramesPlus\obj\Debug\FramesPlus.exe
+E:\Documents\GitHub\FramesPlus\FramesPlus\FramesPlus\obj\Debug\FramesPlus.xml
+E:\Documents\GitHub\FramesPlus\FramesPlus\FramesPlus\obj\Debug\FramesPlus.pdb
+E:\Documents\GitHub\FramesPlus\FramesPlus\FramesPlus\obj\Debug\FramesPlus.FramesPlusSplash.resources
