@@ -164,12 +164,12 @@ Partial Class FramesPlus
         'ToolStripSeparator1
         '
         Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
-        Me.ToolStripSeparator1.Size = New System.Drawing.Size(177, 6)
+        Me.ToolStripSeparator1.Size = New System.Drawing.Size(89, 6)
         '
         'tsmiExit
         '
         Me.tsmiExit.Name = "tsmiExit"
-        Me.tsmiExit.Size = New System.Drawing.Size(180, 22)
+        Me.tsmiExit.Size = New System.Drawing.Size(92, 22)
         Me.tsmiExit.Text = "Exit"
         '
         'ProcessingToolStripMenuItem
@@ -182,19 +182,19 @@ Partial Class FramesPlus
         'tsmiNew
         '
         Me.tsmiNew.Name = "tsmiNew"
-        Me.tsmiNew.Size = New System.Drawing.Size(180, 22)
+        Me.tsmiNew.Size = New System.Drawing.Size(125, 22)
         Me.tsmiNew.Text = "New"
         '
         'tsmiClear
         '
         Me.tsmiClear.Name = "tsmiClear"
-        Me.tsmiClear.Size = New System.Drawing.Size(180, 22)
+        Me.tsmiClear.Size = New System.Drawing.Size(125, 22)
         Me.tsmiClear.Text = "Clear"
         '
         'tsmiSummary
         '
         Me.tsmiSummary.Name = "tsmiSummary"
-        Me.tsmiSummary.Size = New System.Drawing.Size(180, 22)
+        Me.tsmiSummary.Size = New System.Drawing.Size(125, 22)
         Me.tsmiSummary.Text = "Summary"
         '
         'HelpToolStripMenuItem
@@ -207,7 +207,7 @@ Partial Class FramesPlus
         'tsmiAbout
         '
         Me.tsmiAbout.Name = "tsmiAbout"
-        Me.tsmiAbout.Size = New System.Drawing.Size(180, 22)
+        Me.tsmiAbout.Size = New System.Drawing.Size(116, 22)
         Me.tsmiAbout.Text = "About..."
         '
         'GroupBox1
@@ -360,7 +360,7 @@ Partial Class FramesPlus
         '
         Me.lblCurrentDate.AutoSize = True
         Me.lblCurrentDate.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblCurrentDate.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCurrentDate.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblCurrentDate.Location = New System.Drawing.Point(415, 38)
         Me.lblCurrentDate.MinimumSize = New System.Drawing.Size(75, 20)
         Me.lblCurrentDate.Name = "lblCurrentDate"
@@ -388,6 +388,7 @@ Partial Class FramesPlus
         Me.lblSubTotalOutput.Name = "lblSubTotalOutput"
         Me.lblSubTotalOutput.Size = New System.Drawing.Size(75, 20)
         Me.lblSubTotalOutput.TabIndex = 20
+        Me.lblSubTotalOutput.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'lblDiscountOutput
         '
@@ -399,6 +400,7 @@ Partial Class FramesPlus
         Me.lblDiscountOutput.Name = "lblDiscountOutput"
         Me.lblDiscountOutput.Size = New System.Drawing.Size(75, 20)
         Me.lblDiscountOutput.TabIndex = 21
+        Me.lblDiscountOutput.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'lblNetSubTotalOutput
         '
@@ -410,6 +412,7 @@ Partial Class FramesPlus
         Me.lblNetSubTotalOutput.Name = "lblNetSubTotalOutput"
         Me.lblNetSubTotalOutput.Size = New System.Drawing.Size(75, 20)
         Me.lblNetSubTotalOutput.TabIndex = 22
+        Me.lblNetSubTotalOutput.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'lblTaxOutput
         '
@@ -421,6 +424,7 @@ Partial Class FramesPlus
         Me.lblTaxOutput.Name = "lblTaxOutput"
         Me.lblTaxOutput.Size = New System.Drawing.Size(75, 20)
         Me.lblTaxOutput.TabIndex = 23
+        Me.lblTaxOutput.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'lblTotalOutput
         '
@@ -432,6 +436,7 @@ Partial Class FramesPlus
         Me.lblTotalOutput.Name = "lblTotalOutput"
         Me.lblTotalOutput.Size = New System.Drawing.Size(75, 20)
         Me.lblTotalOutput.TabIndex = 24
+        Me.lblTotalOutput.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'lbl3x5Price
         '
@@ -444,6 +449,7 @@ Partial Class FramesPlus
         Me.lbl3x5Price.Name = "lbl3x5Price"
         Me.lbl3x5Price.Size = New System.Drawing.Size(35, 20)
         Me.lbl3x5Price.TabIndex = 17
+        Me.lbl3x5Price.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'lbl4x6Price
         '
@@ -456,6 +462,7 @@ Partial Class FramesPlus
         Me.lbl4x6Price.Name = "lbl4x6Price"
         Me.lbl4x6Price.Size = New System.Drawing.Size(35, 20)
         Me.lbl4x6Price.TabIndex = 25
+        Me.lbl4x6Price.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'lbl5x7Price
         '
@@ -468,6 +475,7 @@ Partial Class FramesPlus
         Me.lbl5x7Price.Name = "lbl5x7Price"
         Me.lbl5x7Price.Size = New System.Drawing.Size(35, 20)
         Me.lbl5x7Price.TabIndex = 26
+        Me.lbl5x7Price.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'lbl8x10Price
         '
@@ -480,6 +488,7 @@ Partial Class FramesPlus
         Me.lbl8x10Price.Name = "lbl8x10Price"
         Me.lbl8x10Price.Size = New System.Drawing.Size(35, 20)
         Me.lbl8x10Price.TabIndex = 27
+        Me.lbl8x10Price.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'lbl3x5Ext
         '
@@ -492,6 +501,7 @@ Partial Class FramesPlus
         Me.lbl3x5Ext.Name = "lbl3x5Ext"
         Me.lbl3x5Ext.Size = New System.Drawing.Size(75, 20)
         Me.lbl3x5Ext.TabIndex = 17
+        Me.lbl3x5Ext.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'lbl4x6Ext
         '
@@ -504,6 +514,7 @@ Partial Class FramesPlus
         Me.lbl4x6Ext.Name = "lbl4x6Ext"
         Me.lbl4x6Ext.Size = New System.Drawing.Size(75, 20)
         Me.lbl4x6Ext.TabIndex = 25
+        Me.lbl4x6Ext.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'lbl5x7Ext
         '
@@ -516,6 +527,7 @@ Partial Class FramesPlus
         Me.lbl5x7Ext.Name = "lbl5x7Ext"
         Me.lbl5x7Ext.Size = New System.Drawing.Size(75, 20)
         Me.lbl5x7Ext.TabIndex = 26
+        Me.lbl5x7Ext.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'lbl8x10Ext
         '
@@ -528,6 +540,7 @@ Partial Class FramesPlus
         Me.lbl8x10Ext.Name = "lbl8x10Ext"
         Me.lbl8x10Ext.Size = New System.Drawing.Size(75, 20)
         Me.lbl8x10Ext.TabIndex = 27
+        Me.lbl8x10Ext.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'cb5x6
         '
@@ -551,6 +564,7 @@ Partial Class FramesPlus
         Me.lbl5x6Price.Name = "lbl5x6Price"
         Me.lbl5x6Price.Size = New System.Drawing.Size(35, 20)
         Me.lbl5x6Price.TabIndex = 26
+        Me.lbl5x6Price.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'lbl5x6Ext
         '
@@ -563,6 +577,7 @@ Partial Class FramesPlus
         Me.lbl5x6Ext.Name = "lbl5x6Ext"
         Me.lbl5x6Ext.Size = New System.Drawing.Size(75, 20)
         Me.lbl5x6Ext.TabIndex = 26
+        Me.lbl5x6Ext.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'tb3x5
         '

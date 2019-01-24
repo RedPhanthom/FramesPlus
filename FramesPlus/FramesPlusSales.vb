@@ -17,13 +17,6 @@
         'Display Current System date on Date Label
         Dim currentDate As Date = Format(Now(), "short date")
         lblCurrentDate.Text = currentDate
-
-        'Determine if a CheckBox Option has been picked to Allow Quanity Input
-        If cb3x5.Checked Then
-            tb3x5.Enabled = True
-        End If
-
-
     End Sub
 
     Private Sub tsmiExit_Click(sender As Object, e As EventArgs) Handles tsmiExit.Click
@@ -45,5 +38,45 @@
 
     Private Sub tsmiNew_Click(sender As Object, e As EventArgs) Handles tsmiNew.Click
 
+    End Sub
+    'Check If the Appropriate checkbox is checked, if so enable the textbox to allow Quanity Input.
+    Private Sub cb3x5_CheckedChanged(sender As Object, e As EventArgs) Handles cb3x5.CheckedChanged
+        If cb3x5.Checked = True Then
+            tb3x5.Enabled = True
+        Else
+            tb3x5.Enabled = False
+        End If
+    End Sub
+
+    Private Sub cb4x6_CheckedChanged(sender As Object, e As EventArgs) Handles cb4x6.CheckedChanged
+        If cb4x6.Checked = True Then
+            tb4x6.Enabled = True
+        Else
+            tb4x6.Enabled = False
+        End If
+    End Sub
+
+    Private Sub cb5x6_CheckedChanged(sender As Object, e As EventArgs) Handles cb5x6.CheckedChanged
+        If cb5x6.Checked = True Then
+            tb5x6.Enabled = True
+        Else
+            tb5x6.Enabled = False
+        End If
+    End Sub
+
+    Private Sub cb5x7_CheckedChanged(sender As Object, e As EventArgs) Handles cb5x7.CheckedChanged
+        If cb5x7.Checked = True Then
+            tb5x7.Enabled = True
+        Else
+            tb5x7.Enabled = False
+        End If
+    End Sub
+
+    Private Sub cb8x10_CheckedChanged(sender As Object, e As EventArgs) Handles cb8x10.CheckedChanged
+        If cb8x10.Checked = True Then
+            tb8x10.Enabled = True
+        Else
+            tb8x10.Enabled = False
+        End If
     End Sub
 End Class
