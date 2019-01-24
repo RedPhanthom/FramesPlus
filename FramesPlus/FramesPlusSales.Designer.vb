@@ -46,32 +46,36 @@ Partial Class FramesPlus
         Me.lblQuantity = New System.Windows.Forms.Label()
         Me.lblPrice = New System.Windows.Forms.Label()
         Me.lblExtenstion = New System.Windows.Forms.Label()
-        Me.tbDate = New System.Windows.Forms.TextBox()
-        Me.tbOrderNumber = New System.Windows.Forms.TextBox()
         Me.lblOrderNumber = New System.Windows.Forms.Label()
         Me.lblDate = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
-        Me.TextBox7 = New System.Windows.Forms.TextBox()
-        Me.TextBox8 = New System.Windows.Forms.TextBox()
-        Me.TextBox9 = New System.Windows.Forms.TextBox()
-        Me.TextBox10 = New System.Windows.Forms.TextBox()
-        Me.TextBox11 = New System.Windows.Forms.TextBox()
-        Me.TextBox12 = New System.Windows.Forms.TextBox()
-        Me.TextBox13 = New System.Windows.Forms.TextBox()
-        Me.TextBox14 = New System.Windows.Forms.TextBox()
-        Me.TextBox15 = New System.Windows.Forms.TextBox()
-        Me.TextBox16 = New System.Windows.Forms.TextBox()
-        Me.TextBox17 = New System.Windows.Forms.TextBox()
         Me.lblSubTotal = New System.Windows.Forms.Label()
         Me.lblDiscount = New System.Windows.Forms.Label()
         Me.lblNetSubTotal = New System.Windows.Forms.Label()
         Me.lblTax = New System.Windows.Forms.Label()
         Me.lblTotal = New System.Windows.Forms.Label()
+        Me.lblCurrentDate = New System.Windows.Forms.Label()
+        Me.lblOrder = New System.Windows.Forms.Label()
+        Me.lblSubTotalOutput = New System.Windows.Forms.Label()
+        Me.lblDiscountOutput = New System.Windows.Forms.Label()
+        Me.lblNetSubTotalOutput = New System.Windows.Forms.Label()
+        Me.lblTaxOutput = New System.Windows.Forms.Label()
+        Me.lblTotalOutput = New System.Windows.Forms.Label()
+        Me.lbl3x5Price = New System.Windows.Forms.Label()
+        Me.lbl4x6Price = New System.Windows.Forms.Label()
+        Me.lbl5x7Price = New System.Windows.Forms.Label()
+        Me.lbl8x10Price = New System.Windows.Forms.Label()
+        Me.lbl3x5Ext = New System.Windows.Forms.Label()
+        Me.lbl4x6Ext = New System.Windows.Forms.Label()
+        Me.lbl5x7Ext = New System.Windows.Forms.Label()
+        Me.lbl8x10Ext = New System.Windows.Forms.Label()
+        Me.cb5x6 = New System.Windows.Forms.CheckBox()
+        Me.lbl5x6Price = New System.Windows.Forms.Label()
+        Me.lbl5x6Ext = New System.Windows.Forms.Label()
+        Me.tb3x5 = New System.Windows.Forms.TextBox()
+        Me.tb4x6 = New System.Windows.Forms.TextBox()
+        Me.tb5x6 = New System.Windows.Forms.TextBox()
+        Me.tb5x7 = New System.Windows.Forms.TextBox()
+        Me.tb8x10 = New System.Windows.Forms.TextBox()
         CType(Me.pbFramesPic, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.msTopMenu.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
@@ -123,7 +127,7 @@ Partial Class FramesPlus
         '
         Me.cb5x7.AutoSize = True
         Me.cb5x7.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cb5x7.Location = New System.Drawing.Point(11, 228)
+        Me.cb5x7.Location = New System.Drawing.Point(11, 252)
         Me.cb5x7.Name = "cb5x7"
         Me.cb5x7.Size = New System.Drawing.Size(65, 24)
         Me.cb5x7.TabIndex = 4
@@ -134,7 +138,7 @@ Partial Class FramesPlus
         '
         Me.cb8x10.AutoSize = True
         Me.cb8x10.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cb8x10.Location = New System.Drawing.Point(11, 258)
+        Me.cb8x10.Location = New System.Drawing.Point(11, 282)
         Me.cb8x10.Name = "cb8x10"
         Me.cb8x10.Size = New System.Drawing.Size(74, 24)
         Me.cb8x10.TabIndex = 5
@@ -154,7 +158,7 @@ Partial Class FramesPlus
         '
         Me.ToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripSeparator1, Me.tsmiExit})
         Me.ToolStripMenuItem1.Name = "ToolStripMenuItem1"
-        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(122, 20)
+        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(37, 20)
         Me.ToolStripMenuItem1.Text = "File"
         '
         'ToolStripSeparator1
@@ -282,21 +286,6 @@ Partial Class FramesPlus
         Me.lblExtenstion.TabIndex = 8
         Me.lblExtenstion.Text = "Extenstion"
         '
-        'tbDate
-        '
-        Me.tbDate.Location = New System.Drawing.Point(392, 37)
-        Me.tbDate.Name = "tbDate"
-        Me.tbDate.Size = New System.Drawing.Size(100, 20)
-        Me.tbDate.TabIndex = 9
-        Me.tbDate.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'tbOrderNumber
-        '
-        Me.tbOrderNumber.Location = New System.Drawing.Point(454, 64)
-        Me.tbOrderNumber.Name = "tbOrderNumber"
-        Me.tbOrderNumber.Size = New System.Drawing.Size(37, 20)
-        Me.tbOrderNumber.TabIndex = 10
-        '
         'lblOrderNumber
         '
         Me.lblOrderNumber.AutoSize = True
@@ -311,140 +300,11 @@ Partial Class FramesPlus
         '
         Me.lblDate.AutoSize = True
         Me.lblDate.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblDate.Location = New System.Drawing.Point(338, 38)
+        Me.lblDate.Location = New System.Drawing.Point(364, 38)
         Me.lblDate.Name = "lblDate"
         Me.lblDate.Size = New System.Drawing.Size(48, 20)
         Me.lblDate.TabIndex = 12
         Me.lblDate.Text = "Date"
-        '
-        'TextBox1
-        '
-        Me.TextBox1.Location = New System.Drawing.Point(400, 171)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(90, 20)
-        Me.TextBox1.TabIndex = 13
-        '
-        'TextBox2
-        '
-        Me.TextBox2.Location = New System.Drawing.Point(400, 202)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(90, 20)
-        Me.TextBox2.TabIndex = 13
-        '
-        'TextBox3
-        '
-        Me.TextBox3.Location = New System.Drawing.Point(400, 232)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(90, 20)
-        Me.TextBox3.TabIndex = 13
-        '
-        'TextBox4
-        '
-        Me.TextBox4.Location = New System.Drawing.Point(400, 262)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(90, 20)
-        Me.TextBox4.TabIndex = 13
-        '
-        'TextBox5
-        '
-        Me.TextBox5.Location = New System.Drawing.Point(331, 171)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(45, 20)
-        Me.TextBox5.TabIndex = 13
-        '
-        'TextBox6
-        '
-        Me.TextBox6.Location = New System.Drawing.Point(331, 202)
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(45, 20)
-        Me.TextBox6.TabIndex = 13
-        '
-        'TextBox7
-        '
-        Me.TextBox7.Location = New System.Drawing.Point(331, 232)
-        Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.Size = New System.Drawing.Size(45, 20)
-        Me.TextBox7.TabIndex = 13
-        '
-        'TextBox8
-        '
-        Me.TextBox8.Location = New System.Drawing.Point(331, 262)
-        Me.TextBox8.Name = "TextBox8"
-        Me.TextBox8.Size = New System.Drawing.Size(45, 20)
-        Me.TextBox8.TabIndex = 13
-        '
-        'TextBox9
-        '
-        Me.TextBox9.Location = New System.Drawing.Point(273, 171)
-        Me.TextBox9.Name = "TextBox9"
-        Me.TextBox9.Size = New System.Drawing.Size(34, 20)
-        Me.TextBox9.TabIndex = 13
-        '
-        'TextBox10
-        '
-        Me.TextBox10.Location = New System.Drawing.Point(273, 202)
-        Me.TextBox10.Name = "TextBox10"
-        Me.TextBox10.Size = New System.Drawing.Size(34, 20)
-        Me.TextBox10.TabIndex = 13
-        '
-        'TextBox11
-        '
-        Me.TextBox11.Location = New System.Drawing.Point(273, 232)
-        Me.TextBox11.Name = "TextBox11"
-        Me.TextBox11.Size = New System.Drawing.Size(34, 20)
-        Me.TextBox11.TabIndex = 13
-        '
-        'TextBox12
-        '
-        Me.TextBox12.Location = New System.Drawing.Point(273, 262)
-        Me.TextBox12.Name = "TextBox12"
-        Me.TextBox12.Size = New System.Drawing.Size(34, 20)
-        Me.TextBox12.TabIndex = 13
-        '
-        'TextBox13
-        '
-        Me.TextBox13.Enabled = False
-        Me.TextBox13.Location = New System.Drawing.Point(400, 314)
-        Me.TextBox13.Name = "TextBox13"
-        Me.TextBox13.Size = New System.Drawing.Size(90, 20)
-        Me.TextBox13.TabIndex = 13
-        Me.TextBox13.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-        '
-        'TextBox14
-        '
-        Me.TextBox14.Enabled = False
-        Me.TextBox14.Location = New System.Drawing.Point(400, 340)
-        Me.TextBox14.Name = "TextBox14"
-        Me.TextBox14.Size = New System.Drawing.Size(90, 20)
-        Me.TextBox14.TabIndex = 13
-        Me.TextBox14.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-        '
-        'TextBox15
-        '
-        Me.TextBox15.Enabled = False
-        Me.TextBox15.Location = New System.Drawing.Point(400, 366)
-        Me.TextBox15.Name = "TextBox15"
-        Me.TextBox15.Size = New System.Drawing.Size(90, 20)
-        Me.TextBox15.TabIndex = 13
-        Me.TextBox15.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-        '
-        'TextBox16
-        '
-        Me.TextBox16.Enabled = False
-        Me.TextBox16.Location = New System.Drawing.Point(400, 418)
-        Me.TextBox16.Name = "TextBox16"
-        Me.TextBox16.Size = New System.Drawing.Size(90, 20)
-        Me.TextBox16.TabIndex = 13
-        Me.TextBox16.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-        '
-        'TextBox17
-        '
-        Me.TextBox17.Enabled = False
-        Me.TextBox17.Location = New System.Drawing.Point(400, 392)
-        Me.TextBox17.Name = "TextBox17"
-        Me.TextBox17.Size = New System.Drawing.Size(90, 20)
-        Me.TextBox17.TabIndex = 13
-        Me.TextBox17.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'lblSubTotal
         '
@@ -496,42 +356,304 @@ Partial Class FramesPlus
         Me.lblTotal.TabIndex = 14
         Me.lblTotal.Text = "TOTAL"
         '
+        'lblCurrentDate
+        '
+        Me.lblCurrentDate.AutoSize = True
+        Me.lblCurrentDate.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblCurrentDate.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCurrentDate.Location = New System.Drawing.Point(415, 38)
+        Me.lblCurrentDate.MinimumSize = New System.Drawing.Size(75, 20)
+        Me.lblCurrentDate.Name = "lblCurrentDate"
+        Me.lblCurrentDate.Size = New System.Drawing.Size(75, 20)
+        Me.lblCurrentDate.TabIndex = 15
+        '
+        'lblOrder
+        '
+        Me.lblOrder.AutoSize = True
+        Me.lblOrder.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblOrder.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblOrder.Location = New System.Drawing.Point(454, 65)
+        Me.lblOrder.MinimumSize = New System.Drawing.Size(35, 20)
+        Me.lblOrder.Name = "lblOrder"
+        Me.lblOrder.Size = New System.Drawing.Size(35, 20)
+        Me.lblOrder.TabIndex = 16
+        '
+        'lblSubTotalOutput
+        '
+        Me.lblSubTotalOutput.AutoSize = True
+        Me.lblSubTotalOutput.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblSubTotalOutput.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblSubTotalOutput.Location = New System.Drawing.Point(400, 314)
+        Me.lblSubTotalOutput.MinimumSize = New System.Drawing.Size(75, 20)
+        Me.lblSubTotalOutput.Name = "lblSubTotalOutput"
+        Me.lblSubTotalOutput.Size = New System.Drawing.Size(75, 20)
+        Me.lblSubTotalOutput.TabIndex = 20
+        '
+        'lblDiscountOutput
+        '
+        Me.lblDiscountOutput.AutoSize = True
+        Me.lblDiscountOutput.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblDiscountOutput.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblDiscountOutput.Location = New System.Drawing.Point(400, 343)
+        Me.lblDiscountOutput.MinimumSize = New System.Drawing.Size(75, 20)
+        Me.lblDiscountOutput.Name = "lblDiscountOutput"
+        Me.lblDiscountOutput.Size = New System.Drawing.Size(75, 20)
+        Me.lblDiscountOutput.TabIndex = 21
+        '
+        'lblNetSubTotalOutput
+        '
+        Me.lblNetSubTotalOutput.AutoSize = True
+        Me.lblNetSubTotalOutput.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblNetSubTotalOutput.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblNetSubTotalOutput.Location = New System.Drawing.Point(400, 367)
+        Me.lblNetSubTotalOutput.MinimumSize = New System.Drawing.Size(75, 20)
+        Me.lblNetSubTotalOutput.Name = "lblNetSubTotalOutput"
+        Me.lblNetSubTotalOutput.Size = New System.Drawing.Size(75, 20)
+        Me.lblNetSubTotalOutput.TabIndex = 22
+        '
+        'lblTaxOutput
+        '
+        Me.lblTaxOutput.AutoSize = True
+        Me.lblTaxOutput.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblTaxOutput.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTaxOutput.Location = New System.Drawing.Point(400, 393)
+        Me.lblTaxOutput.MinimumSize = New System.Drawing.Size(75, 20)
+        Me.lblTaxOutput.Name = "lblTaxOutput"
+        Me.lblTaxOutput.Size = New System.Drawing.Size(75, 20)
+        Me.lblTaxOutput.TabIndex = 23
+        '
+        'lblTotalOutput
+        '
+        Me.lblTotalOutput.AutoSize = True
+        Me.lblTotalOutput.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblTotalOutput.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTotalOutput.Location = New System.Drawing.Point(400, 418)
+        Me.lblTotalOutput.MinimumSize = New System.Drawing.Size(75, 20)
+        Me.lblTotalOutput.Name = "lblTotalOutput"
+        Me.lblTotalOutput.Size = New System.Drawing.Size(75, 20)
+        Me.lblTotalOutput.TabIndex = 24
+        '
+        'lbl3x5Price
+        '
+        Me.lbl3x5Price.AutoSize = True
+        Me.lbl3x5Price.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lbl3x5Price.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl3x5Price.Location = New System.Drawing.Point(331, 172)
+        Me.lbl3x5Price.MaximumSize = New System.Drawing.Size(25, 13)
+        Me.lbl3x5Price.MinimumSize = New System.Drawing.Size(35, 20)
+        Me.lbl3x5Price.Name = "lbl3x5Price"
+        Me.lbl3x5Price.Size = New System.Drawing.Size(35, 20)
+        Me.lbl3x5Price.TabIndex = 17
+        '
+        'lbl4x6Price
+        '
+        Me.lbl4x6Price.AutoSize = True
+        Me.lbl4x6Price.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lbl4x6Price.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl4x6Price.Location = New System.Drawing.Point(331, 202)
+        Me.lbl4x6Price.MaximumSize = New System.Drawing.Size(25, 13)
+        Me.lbl4x6Price.MinimumSize = New System.Drawing.Size(35, 20)
+        Me.lbl4x6Price.Name = "lbl4x6Price"
+        Me.lbl4x6Price.Size = New System.Drawing.Size(35, 20)
+        Me.lbl4x6Price.TabIndex = 25
+        '
+        'lbl5x7Price
+        '
+        Me.lbl5x7Price.AutoSize = True
+        Me.lbl5x7Price.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lbl5x7Price.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl5x7Price.Location = New System.Drawing.Point(331, 256)
+        Me.lbl5x7Price.MaximumSize = New System.Drawing.Size(25, 13)
+        Me.lbl5x7Price.MinimumSize = New System.Drawing.Size(35, 20)
+        Me.lbl5x7Price.Name = "lbl5x7Price"
+        Me.lbl5x7Price.Size = New System.Drawing.Size(35, 20)
+        Me.lbl5x7Price.TabIndex = 26
+        '
+        'lbl8x10Price
+        '
+        Me.lbl8x10Price.AutoSize = True
+        Me.lbl8x10Price.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lbl8x10Price.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl8x10Price.Location = New System.Drawing.Point(331, 286)
+        Me.lbl8x10Price.MaximumSize = New System.Drawing.Size(25, 13)
+        Me.lbl8x10Price.MinimumSize = New System.Drawing.Size(35, 20)
+        Me.lbl8x10Price.Name = "lbl8x10Price"
+        Me.lbl8x10Price.Size = New System.Drawing.Size(35, 20)
+        Me.lbl8x10Price.TabIndex = 27
+        '
+        'lbl3x5Ext
+        '
+        Me.lbl3x5Ext.AutoSize = True
+        Me.lbl3x5Ext.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lbl3x5Ext.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl3x5Ext.Location = New System.Drawing.Point(400, 172)
+        Me.lbl3x5Ext.MaximumSize = New System.Drawing.Size(25, 13)
+        Me.lbl3x5Ext.MinimumSize = New System.Drawing.Size(75, 20)
+        Me.lbl3x5Ext.Name = "lbl3x5Ext"
+        Me.lbl3x5Ext.Size = New System.Drawing.Size(75, 20)
+        Me.lbl3x5Ext.TabIndex = 17
+        '
+        'lbl4x6Ext
+        '
+        Me.lbl4x6Ext.AutoSize = True
+        Me.lbl4x6Ext.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lbl4x6Ext.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl4x6Ext.Location = New System.Drawing.Point(400, 202)
+        Me.lbl4x6Ext.MaximumSize = New System.Drawing.Size(25, 13)
+        Me.lbl4x6Ext.MinimumSize = New System.Drawing.Size(75, 20)
+        Me.lbl4x6Ext.Name = "lbl4x6Ext"
+        Me.lbl4x6Ext.Size = New System.Drawing.Size(75, 20)
+        Me.lbl4x6Ext.TabIndex = 25
+        '
+        'lbl5x7Ext
+        '
+        Me.lbl5x7Ext.AutoSize = True
+        Me.lbl5x7Ext.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lbl5x7Ext.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl5x7Ext.Location = New System.Drawing.Point(400, 256)
+        Me.lbl5x7Ext.MaximumSize = New System.Drawing.Size(25, 13)
+        Me.lbl5x7Ext.MinimumSize = New System.Drawing.Size(75, 20)
+        Me.lbl5x7Ext.Name = "lbl5x7Ext"
+        Me.lbl5x7Ext.Size = New System.Drawing.Size(75, 20)
+        Me.lbl5x7Ext.TabIndex = 26
+        '
+        'lbl8x10Ext
+        '
+        Me.lbl8x10Ext.AutoSize = True
+        Me.lbl8x10Ext.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lbl8x10Ext.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl8x10Ext.Location = New System.Drawing.Point(400, 286)
+        Me.lbl8x10Ext.MaximumSize = New System.Drawing.Size(25, 13)
+        Me.lbl8x10Ext.MinimumSize = New System.Drawing.Size(75, 20)
+        Me.lbl8x10Ext.Name = "lbl8x10Ext"
+        Me.lbl8x10Ext.Size = New System.Drawing.Size(75, 20)
+        Me.lbl8x10Ext.TabIndex = 27
+        '
+        'cb5x6
+        '
+        Me.cb5x6.AutoSize = True
+        Me.cb5x6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cb5x6.Location = New System.Drawing.Point(11, 224)
+        Me.cb5x6.Name = "cb5x6"
+        Me.cb5x6.Size = New System.Drawing.Size(65, 24)
+        Me.cb5x6.TabIndex = 4
+        Me.cb5x6.Text = "5 X 6"
+        Me.cb5x6.UseVisualStyleBackColor = True
+        '
+        'lbl5x6Price
+        '
+        Me.lbl5x6Price.AutoSize = True
+        Me.lbl5x6Price.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lbl5x6Price.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl5x6Price.Location = New System.Drawing.Point(331, 228)
+        Me.lbl5x6Price.MaximumSize = New System.Drawing.Size(25, 13)
+        Me.lbl5x6Price.MinimumSize = New System.Drawing.Size(35, 20)
+        Me.lbl5x6Price.Name = "lbl5x6Price"
+        Me.lbl5x6Price.Size = New System.Drawing.Size(35, 20)
+        Me.lbl5x6Price.TabIndex = 26
+        '
+        'lbl5x6Ext
+        '
+        Me.lbl5x6Ext.AutoSize = True
+        Me.lbl5x6Ext.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lbl5x6Ext.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl5x6Ext.Location = New System.Drawing.Point(400, 228)
+        Me.lbl5x6Ext.MaximumSize = New System.Drawing.Size(25, 13)
+        Me.lbl5x6Ext.MinimumSize = New System.Drawing.Size(75, 20)
+        Me.lbl5x6Ext.Name = "lbl5x6Ext"
+        Me.lbl5x6Ext.Size = New System.Drawing.Size(75, 20)
+        Me.lbl5x6Ext.TabIndex = 26
+        '
+        'tb3x5
+        '
+        Me.tb3x5.Enabled = False
+        Me.tb3x5.Location = New System.Drawing.Point(261, 172)
+        Me.tb3x5.MaximumSize = New System.Drawing.Size(35, 20)
+        Me.tb3x5.MinimumSize = New System.Drawing.Size(35, 20)
+        Me.tb3x5.Name = "tb3x5"
+        Me.tb3x5.Size = New System.Drawing.Size(35, 20)
+        Me.tb3x5.TabIndex = 28
+        '
+        'tb4x6
+        '
+        Me.tb4x6.Enabled = False
+        Me.tb4x6.Location = New System.Drawing.Point(261, 198)
+        Me.tb4x6.MaximumSize = New System.Drawing.Size(35, 20)
+        Me.tb4x6.MinimumSize = New System.Drawing.Size(35, 20)
+        Me.tb4x6.Name = "tb4x6"
+        Me.tb4x6.Size = New System.Drawing.Size(35, 20)
+        Me.tb4x6.TabIndex = 28
+        '
+        'tb5x6
+        '
+        Me.tb5x6.Enabled = False
+        Me.tb5x6.Location = New System.Drawing.Point(261, 228)
+        Me.tb5x6.MaximumSize = New System.Drawing.Size(35, 20)
+        Me.tb5x6.MinimumSize = New System.Drawing.Size(35, 20)
+        Me.tb5x6.Name = "tb5x6"
+        Me.tb5x6.Size = New System.Drawing.Size(35, 20)
+        Me.tb5x6.TabIndex = 28
+        '
+        'tb5x7
+        '
+        Me.tb5x7.Enabled = False
+        Me.tb5x7.Location = New System.Drawing.Point(261, 256)
+        Me.tb5x7.MaximumSize = New System.Drawing.Size(35, 20)
+        Me.tb5x7.MinimumSize = New System.Drawing.Size(35, 20)
+        Me.tb5x7.Name = "tb5x7"
+        Me.tb5x7.Size = New System.Drawing.Size(35, 20)
+        Me.tb5x7.TabIndex = 28
+        '
+        'tb8x10
+        '
+        Me.tb8x10.Enabled = False
+        Me.tb8x10.Location = New System.Drawing.Point(261, 286)
+        Me.tb8x10.MaximumSize = New System.Drawing.Size(35, 20)
+        Me.tb8x10.MinimumSize = New System.Drawing.Size(35, 20)
+        Me.tb8x10.Name = "tb8x10"
+        Me.tb8x10.Size = New System.Drawing.Size(35, 20)
+        Me.tb8x10.TabIndex = 28
+        '
         'FramesPlus
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(504, 446)
+        Me.Controls.Add(Me.tb8x10)
+        Me.Controls.Add(Me.tb5x7)
+        Me.Controls.Add(Me.tb5x6)
+        Me.Controls.Add(Me.tb4x6)
+        Me.Controls.Add(Me.tb3x5)
+        Me.Controls.Add(Me.lbl8x10Ext)
+        Me.Controls.Add(Me.lbl8x10Price)
+        Me.Controls.Add(Me.lbl5x6Ext)
+        Me.Controls.Add(Me.lbl5x6Price)
+        Me.Controls.Add(Me.lbl5x7Ext)
+        Me.Controls.Add(Me.lbl5x7Price)
+        Me.Controls.Add(Me.lbl4x6Ext)
+        Me.Controls.Add(Me.lbl4x6Price)
+        Me.Controls.Add(Me.lblTotalOutput)
+        Me.Controls.Add(Me.lblTaxOutput)
+        Me.Controls.Add(Me.lblNetSubTotalOutput)
+        Me.Controls.Add(Me.lbl3x5Ext)
+        Me.Controls.Add(Me.lblDiscountOutput)
+        Me.Controls.Add(Me.lbl3x5Price)
+        Me.Controls.Add(Me.lblSubTotalOutput)
+        Me.Controls.Add(Me.lblOrder)
+        Me.Controls.Add(Me.lblCurrentDate)
         Me.Controls.Add(Me.lblTotal)
         Me.Controls.Add(Me.lblTax)
         Me.Controls.Add(Me.lblNetSubTotal)
         Me.Controls.Add(Me.lblDiscount)
         Me.Controls.Add(Me.lblSubTotal)
-        Me.Controls.Add(Me.TextBox17)
-        Me.Controls.Add(Me.TextBox16)
-        Me.Controls.Add(Me.TextBox15)
-        Me.Controls.Add(Me.TextBox14)
-        Me.Controls.Add(Me.TextBox13)
-        Me.Controls.Add(Me.TextBox4)
-        Me.Controls.Add(Me.TextBox3)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.TextBox8)
-        Me.Controls.Add(Me.TextBox7)
-        Me.Controls.Add(Me.TextBox6)
-        Me.Controls.Add(Me.TextBox12)
-        Me.Controls.Add(Me.TextBox11)
-        Me.Controls.Add(Me.TextBox10)
-        Me.Controls.Add(Me.TextBox9)
-        Me.Controls.Add(Me.TextBox5)
-        Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.lblDate)
         Me.Controls.Add(Me.lblOrderNumber)
-        Me.Controls.Add(Me.tbOrderNumber)
-        Me.Controls.Add(Me.tbDate)
         Me.Controls.Add(Me.lblExtenstion)
         Me.Controls.Add(Me.lblPrice)
         Me.Controls.Add(Me.lblQuantity)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.cb8x10)
+        Me.Controls.Add(Me.cb5x6)
         Me.Controls.Add(Me.cb5x7)
         Me.Controls.Add(Me.cb4x6)
         Me.Controls.Add(Me.cb3x5)
@@ -578,30 +700,34 @@ Partial Class FramesPlus
     Friend WithEvents lblQuantity As Label
     Friend WithEvents lblPrice As Label
     Friend WithEvents lblExtenstion As Label
-    Friend WithEvents tbDate As TextBox
-    Friend WithEvents tbOrderNumber As TextBox
     Friend WithEvents lblOrderNumber As Label
     Friend WithEvents lblDate As Label
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents TextBox4 As TextBox
-    Friend WithEvents TextBox5 As TextBox
-    Friend WithEvents TextBox6 As TextBox
-    Friend WithEvents TextBox7 As TextBox
-    Friend WithEvents TextBox8 As TextBox
-    Friend WithEvents TextBox9 As TextBox
-    Friend WithEvents TextBox10 As TextBox
-    Friend WithEvents TextBox11 As TextBox
-    Friend WithEvents TextBox12 As TextBox
-    Friend WithEvents TextBox13 As TextBox
-    Friend WithEvents TextBox14 As TextBox
-    Friend WithEvents TextBox15 As TextBox
-    Friend WithEvents TextBox16 As TextBox
-    Friend WithEvents TextBox17 As TextBox
     Friend WithEvents lblSubTotal As Label
     Friend WithEvents lblDiscount As Label
     Friend WithEvents lblNetSubTotal As Label
     Friend WithEvents lblTax As Label
     Friend WithEvents lblTotal As Label
+    Friend WithEvents lblCurrentDate As Label
+    Friend WithEvents lblOrder As Label
+    Friend WithEvents lblSubTotalOutput As Label
+    Friend WithEvents lblDiscountOutput As Label
+    Friend WithEvents lblNetSubTotalOutput As Label
+    Friend WithEvents lblTaxOutput As Label
+    Friend WithEvents lblTotalOutput As Label
+    Friend WithEvents lbl3x5Price As Label
+    Friend WithEvents lbl4x6Price As Label
+    Friend WithEvents lbl5x7Price As Label
+    Friend WithEvents lbl8x10Price As Label
+    Friend WithEvents lbl3x5Ext As Label
+    Friend WithEvents lbl4x6Ext As Label
+    Friend WithEvents lbl5x7Ext As Label
+    Friend WithEvents lbl8x10Ext As Label
+    Friend WithEvents cb5x6 As CheckBox
+    Friend WithEvents lbl5x6Price As Label
+    Friend WithEvents lbl5x6Ext As Label
+    Friend WithEvents tb3x5 As TextBox
+    Friend WithEvents tb4x6 As TextBox
+    Friend WithEvents tb5x6 As TextBox
+    Friend WithEvents tb5x7 As TextBox
+    Friend WithEvents tb8x10 As TextBox
 End Class
